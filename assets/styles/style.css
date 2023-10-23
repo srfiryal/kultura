@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #b82a0b;
+  --primary-gradient: #eb623e;
+  --accent: #ff9b28;
+  --accent-gradient: #e28821;
+  --text-body: #2d0008;
+  --text-subtitle: #6d4a50;
+  --grey: #e4e4e4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  color: var(--text-body) !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h4 {
+  font-size: 1.3rem !important;
+}
+
+h5 {
+  font-size: 1rem !important;
+}
+
+button {
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  border-radius: 100rem !important;
+  padding: 0.6rem 1.7rem !important;
+}
+
+ul li {
+  margin: 0 0.3rem;
+}
+
+ul li a {
+  color: var(--text-body) !important;
+}
+
+.default-padding {
+  padding: 0 8rem !important;
+}
+
+.btn-filled-primary {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+#navbar-logo img {
+  height: 2rem;
+}
+
+#navbar-logo h4 {
+  letter-spacing: -0.08rem;
+}
+
+header {
+  height: 100vh;
+}
