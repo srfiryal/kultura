@@ -19,6 +19,7 @@ body {
   color: var(--text-body) !important;
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -26,18 +27,30 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: 700 !important;
+h6,
+p {
   padding: 0 !important;
   margin: 0 !important;
 }
 
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+
 h4 {
   font-size: 1.3rem !important;
+  font-weight: 700 !important;
 }
 
 h5 {
   font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
+h6 {
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
 }
 
 button {
@@ -57,6 +70,7 @@ ul li a {
 
 .default-padding {
   padding: 0 8rem !important;
+  max-width: 250rem;
 }
 
 .btn-filled-primary {
@@ -66,7 +80,12 @@ ul li a {
 
 .btn-outline-primary {
   border-color: var(--primary) !important;
+  background-color: transparent !important;
   color: var(--primary) !important;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 #navbar-logo img {
@@ -78,5 +97,61 @@ ul li a {
 }
 
 header {
-  height: 100vh;
+  height: 95vh;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z--10 {
+  z-index: -10;
+}
+
+#hero-content {
+  padding: 7.5rem 8rem;
+}
+
+#hero-img-1 {
+  width: 29rem;
+  padding: 0;
+}
+
+#hero-img-2 {
+  width: 26rem;
+  padding: 0;
+}
+
+.rounded-md {
+  border-radius: 24px;
+}
+
+.rounded-sm {
+  border-radius: 12px;
+}
+
+.text-subtitle {
+  color: var(--text-subtitle) !important;
 }
