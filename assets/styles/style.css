@@ -54,16 +54,6 @@ h4 {
   font-weight: 700 !important;
 }
 
-h5 {
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-}
-
-h6 {
-  font-size: 0.75rem !important;
-  font-weight: 400 !important;
-}
-
 p {
   font-size: 1.05rem !important;
 }
@@ -75,12 +65,25 @@ button {
   padding: 0.6rem 1.7rem !important;
 }
 
+ul {
+  list-style-type: none;
+}
+
 ul li {
   margin: 0 0.3rem;
 }
 
 ul li a {
-  color: var(--text-body) !important;
+  color: var(--text-subtitle) !important;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
 }
 
 .default-padding {
@@ -111,6 +114,18 @@ ul li a {
   );
 }
 
+.rounded-sm {
+  border-radius: 12px;
+}
+
+.rounded-md {
+  border-radius: 24px;
+}
+
+.text-subtitle {
+  color: var(--text-subtitle) !important;
+}
+
 .color-primary {
   color: var(--primary) !important;
 }
@@ -119,28 +134,24 @@ ul li a {
   color: var(--text-subtitle) !important;
 }
 
-.text-smaller {
-  font-size: 0.9rem !important;
+.text-small {
+  font-size: 1rem !important;
 }
 
-#navbar-logo img {
-  height: 2rem;
+.text-x-small {
+  font-size: 0.75rem !important;
 }
 
-#navbar-logo h4 {
+.text-logo {
   letter-spacing: -0.08rem;
-}
-
-header {
-  height: 82.5vh;
-}
-
-.z-100 {
-  z-index: 100;
 }
 
 .z--10 {
   z-index: -10;
+}
+
+#nav-logo-img {
+  height: 2rem;
 }
 
 #hero-content {
@@ -157,19 +168,11 @@ header {
   padding: 0;
 }
 
-.rounded-sm {
-  border-radius: 12px;
+#hero-background-img {
+  height: 24rem;
 }
 
-.rounded-md {
-  border-radius: 24px;
-}
-
-.text-subtitle {
-  color: var(--text-subtitle) !important;
-}
-
-.img-title {
+.section-title-img {
   width: 7.5rem !important;
 }
 
@@ -201,15 +204,20 @@ header {
   height: 16rem;
 }
 
-.bg-cloud-top {
+.bg-batik-top {
   top: 22rem;
   width: 14rem;
 }
 
-.bg-cloud-bottom {
+.bg-batik-bottom {
   bottom: 28rem;
   width: 24rem;
   opacity: 0.75;
+}
+
+#event-background-img {
+  width: fit-content;
+  height: 70%;
 }
 
 #organizer-img {
@@ -218,6 +226,19 @@ header {
   border: 5px solid white;
 }
 
+.organizer-wayang-img {
+  width: 12rem;
+  top: 4rem;
+}
+
+.organizer-social-icon {
+  width: 2.5rem;
+}
+
+.organizer-background-img {
+  width: 40%;
+}
+
 .footer-shadow {
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
