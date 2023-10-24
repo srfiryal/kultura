@@ -44,6 +44,11 @@ h2 {
   font-weight: 700 !important;
 }
 
+h3 {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+}
+
 h4 {
   font-size: 1.3rem !important;
   font-weight: 700 !important;
@@ -110,6 +115,10 @@ ul li a {
   color: var(--primary) !important;
 }
 
+.color-subtitle {
+  color: var(--text-subtitle) !important;
+}
+
 #navbar-logo img {
   height: 2rem;
 }
@@ -144,12 +153,12 @@ header {
   padding: 0;
 }
 
-.rounded-md {
-  border-radius: 24px;
-}
-
 .rounded-sm {
   border-radius: 12px;
+}
+
+.rounded-md {
+  border-radius: 24px;
 }
 
 .text-subtitle {
