@@ -18,112 +18,109 @@
     />
   </head>
   <body>
-    <header class="d-flex flex-column">
-      <nav
-        class="navbar navbar-expand-lg py-4 default-padding sticky-top bg-white z-100"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div class="row align-items-center" id="navbar-logo">
-              <img class="col me-1" src="./assets/images/icon-kultura.svg" />
-              <h4 class="col mt-1">Kultura</h4>
-            </div>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav
+      class="navbar navbar-expand-lg py-4 default-padding sticky-top bg-white z-100"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="row align-items-center" id="navbar-logo">
+            <img class="col me-1" src="./assets/images/icon-kultura.svg" />
+            <h4 class="col mt-1">Kultura</h4>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 w-100 justify-content-center"
           >
-            <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>Beranda</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>Tentang</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>Pameran</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>Acara</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>Penyelenggara</h5></a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary">Daftar</button>
+        </div>
+      </div>
+    </nav>
+    <header id="hero" class="flex-grow-1 position-relative">
+      <div class="w-100">
+        <div id="hero-content" class="container text-center">
+          <p>Pameran Budaya Nusantara</p>
+          <div class="row mt-3 pb-2">
+            <div class="col-8 mx-auto">
+              <h1 class="w-100 text-center">
+                Bangkitkan semangat budaya bersama Kultura
+              </h1>
+            </div>
+          </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-4 mx-auto d-flex bg-white rounded-sm">
+              <div class="flex-grow-1 d-flex py-3 px-2">
+                <img src="./assets/images/ic-date.svg" alt="Date" />
+                <div class="text-start ms-2">
+                  <h6 class="mb-1 text-subtitle">Waktu</h6>
+                  <h5 class="fw-medium">1-3 Des 2023</h5>
+                </div>
+              </div>
+              <div class="vr"></div>
+              <div class="flex-grow-1 d-flex p-3">
+                <img src="./assets/images/ic-location.svg" alt="Date" />
+                <div class="text-start ms-2">
+                  <h6 class="mb-1 text-subtitle">Tempat</h6>
+                  <h5 class="fw-medium">Borobudur</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-filled-primary shadow-sm mt-1">
+            Jelajahi Sekarang
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 w-100 justify-content-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#"><h5>Beranda</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><h5>Tentang</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><h5>Pameran</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><h5>Acara</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><h5>Penyelenggara</h5></a>
-              </li>
-            </ul>
-            <button class="btn btn-outline-primary">Daftar</button>
-          </div>
         </div>
-      </nav>
-
-      <div id="hero" class="flex-grow-1 relative">
-        <div class="w-100">
-          <div id="hero-content" class="container text-center">
-            <p>Pameran Budaya Nusantara</p>
-            <div class="row mt-1">
-              <div class="col-8 mx-auto">
-                <h1 class="w-100 text-center">
-                  Bangkitkan semangat budaya bersama Kultura
-                </h1>
-              </div>
-            </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-4 mx-auto d-flex bg-white rounded-sm">
-                <div class="flex-grow-1 d-flex py-3 px-2">
-                  <img src="./assets/images/ic-date.svg" alt="Date" />
-                  <div class="text-start ms-2">
-                    <h6 class="mb-1 text-subtitle">Waktu</h6>
-                    <h5 class="fw-medium">1-3 Des 2023</h5>
-                  </div>
-                </div>
-                <div class="vr"></div>
-                <div class="flex-grow-1 d-flex p-3">
-                  <img src="./assets/images/ic-location.svg" alt="Date" />
-                  <div class="text-start ms-2">
-                    <h6 class="mb-1 text-subtitle">Tempat</h6>
-                    <h5 class="fw-medium">Borobudur</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-filled-primary shadow-sm">
-              Jelajahi Sekarang
-            </button>
-          </div>
-          <div class="row">
-            <img
-              id="hero-img-1"
-              class="bottom me-auto z--10"
-              src="./assets/images/img-hero-1.svg"
-              alt="Hero 1"
-            />
-            <img
-              id="hero-img-2"
-              class="bottom right z--10"
-              src="./assets/images/img-hero-2.svg"
-              alt="Hero 2"
-            />
-          </div>
+        <div class="row">
           <img
-            class="bottom w-100 z--10"
-            src="./assets/images/bg-hero.svg"
-            alt="Hero Background"
+            id="hero-img-1"
+            class="position-absolute bottom-0 me-auto z--10"
+            src="./assets/images/img-hero-1.svg"
+            alt="Hero 1"
           />
           <img
-            src="./assets/images/img-divider-1.svg"
-            alt="Divider 1"
-            class="w-100 bottom"
+            id="hero-img-2"
+            class="position-absolute bottom-0 end-0 z--10"
+            src="./assets/images/img-hero-2.svg"
+            alt="Hero 2"
           />
         </div>
+        <img
+          class="position-absolute bottom-0 w-100 z--10"
+          src="./assets/images/bg-hero.svg"
+          alt="Hero Background"
+        />
+        <img
+          src="./assets/images/img-divider-1.svg"
+          alt="Divider 1"
+          class="w-100 position-absolute bottom-0"
+        />
       </div>
     </header>
 
@@ -136,14 +133,14 @@
               src="./assets/images/img-title-white-start.svg"
               alt="Title 1"
             />
-            <h2 class="mx-4">Rayakan Keanekaragaman</h2>
+            <h2 class="mx-4 text-white">Rayakan Keanekaragaman</h2>
             <img
               class="img-title"
               src="./assets/images/img-title-white-end.svg"
               alt="Title 2"
             />
           </div>
-          <p id="about-description">
+          <p id="about-description" class="text-white">
             Kultura memamerkan kekayaan budaya Nusantara dengan mempersembahkan
             pertunjukkan tarian tradisional, makanan daerah, dan karya seni
             lainnya. Dari lukisan Batik yang indah hingga melodi Gamelan yang
@@ -154,10 +151,189 @@
       </div>
     </section>
 
-    <section id="showcase">
+    <section id="showcase" class="position-relative">
       <img
         class="w-100"
         src="./assets/images/img-divider-2.svg"
+        alt="Divider 2"
+      />
+
+      <div class="default-padding py-5 mt-4 mb-5">
+        <div class="d-flex justify-content-center mb-5">
+          <img
+            class="img-title"
+            src="./assets/images/img-title-accent-start.svg"
+            alt="Title 1"
+          />
+          <h2 class="mx-4 text-accent-gradient">Pameran Budaya</h2>
+          <img
+            class="img-title"
+            src="./assets/images/img-title-accent-end.svg"
+            alt="Title 2"
+          />
+        </div>
+
+        <div class="container w-100 p-0">
+          <div class="row gy-5 justify-content-center">
+            <div class="col-4">
+              <div class="bg-white rounded-md shadow overflow-hidden p-0">
+                <img
+                  class="showcase-card-image w-100 object-fit-cover"
+                  src="./assets/images/img-tari.svg"
+                />
+                <div class="p-4 showcase-card-content">
+                  <h4>Tarian Anggun</h4>
+                  <p>
+                    Rasakan daya tarik hipnotis dari tarian tradisional
+                    Indonesia.
+                  </p>
+                </div>
+                <hr class="m-0" />
+                <div class="px-4 py-3">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="color-primary">Selengkapnya</p>
+                      <img
+                        class="ms-2"
+                        src="./assets/images/ic-arrow-right.svg"
+                        alt="Arrow"
+                      /></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-white rounded-md shadow overflow-hidden p-0">
+                <img
+                  class="showcase-card-image w-100 object-fit-cover"
+                  src="./assets/images/img-gamelan.svg"
+                />
+                <div class="p-4 showcase-card-content">
+                  <h4>Harmoni Gamelan</h4>
+                  <p>Hayati keindahan suara-suara instrumen musik tanah air.</p>
+                </div>
+                <hr class="m-0" />
+                <div class="px-4 py-3">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="color-primary">Selengkapnya</p>
+                      <img
+                        class="ms-2"
+                        src="./assets/images/ic-arrow-right.svg"
+                        alt="Arrow"
+                      /></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-white rounded-md shadow overflow-hidden p-0">
+                <img
+                  class="showcase-card-image w-100 object-fit-cover"
+                  src="./assets/images/img-wayang.svg"
+                />
+                <div class="p-4 showcase-card-content">
+                  <h4>Keajaiban Wayang</h4>
+                  <p>Masuki dunia kuno seni wayang kulit yang penuh pesona.</p>
+                </div>
+                <hr class="m-0" />
+                <div class="px-4 py-3">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="color-primary">Selengkapnya</p>
+                      <img
+                        class="ms-2"
+                        src="./assets/images/ic-arrow-right.svg"
+                        alt="Arrow"
+                      /></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-white rounded-md shadow overflow-hidden p-0">
+                <img
+                  class="showcase-card-image w-100 object-fit-cover"
+                  src="./assets/images/img-kuliner.svg"
+                />
+                <div class="p-4 showcase-card-content">
+                  <h4>Kuliner Lezat</h4>
+                  <p>
+                    Nikmati cita rasa unik dan enak dari hidangan asli
+                    Nusantara.
+                  </p>
+                </div>
+                <hr class="m-0" />
+                <div class="px-4 py-3">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="color-primary">Selengkapnya</p>
+                      <img
+                        class="ms-2"
+                        src="./assets/images/ic-arrow-right.svg"
+                        alt="Arrow"
+                      /></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-white rounded-md shadow overflow-hidden p-0">
+                <img
+                  class="showcase-card-image w-100 object-fit-cover"
+                  src="./assets/images/img-batik.svg"
+                />
+                <div class="p-4 showcase-card-content">
+                  <h4>Kreasi Batik</h4>
+                  <p>Kembangkan kreativitasmu dalam sesi pembuatan batik.</p>
+                </div>
+                <hr class="m-0" />
+                <div class="px-4 py-3">
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="color-primary">Selengkapnya</p>
+                      <img
+                        class="ms-2"
+                        src="./assets/images/ic-arrow-right.svg"
+                        alt="Arrow"
+                      /></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 z--10 position-absolute top-0">
+        <img
+          class="bg-cloud-top position-absolute start-0 mt-5"
+          src="./assets/images/bg-cloud-top-1.svg"
+          alt="Background "
+        />
+        <img
+          class="bg-cloud-top position-absolute end-0 mt-5"
+          src="./assets/images/bg-cloud-top-2.svg"
+          alt="Background"
+        />
+      </div>
+
+      <div class="w-100 z--10 position-absolute bottom-0">
+        <img
+          class="bg-cloud-bottom position-absolute start-0 mt-5"
+          src="./assets/images/bg-cloud-bottom-1.svg"
+          alt="Background "
+        />
+        <img
+          class="bg-cloud-bottom position-absolute end-0 mt-5"
+          src="./assets/images/bg-cloud-bottom-2.svg"
+          alt="Background"
+        />
+      </div>
+
+      <img
+        class="w-100 mt-3 pt-4"
+        src="./assets/images/img-divider-monuments.svg"
         alt="Divider 2"
       />
     </section>

@@ -31,6 +31,7 @@ h6,
 p {
   padding: 0 !important;
   margin: 0 !important;
+  color: var(--text-body) !important;
 }
 
 h1 {
@@ -59,7 +60,7 @@ h6 {
 }
 
 p {
-  font-size: 1.15rem !important;
+  font-size: 1.05rem !important;
 }
 
 button {
@@ -78,7 +79,7 @@ ul li a {
 }
 
 .default-padding {
-  padding: 0 8rem !important;
+  padding: 0 10rem !important;
   max-width: 250rem;
 }
 
@@ -105,6 +106,10 @@ ul li a {
   );
 }
 
+.color-primary {
+  color: var(--primary) !important;
+}
+
 #navbar-logo img {
   height: 2rem;
 }
@@ -114,21 +119,7 @@ ul li a {
 }
 
 header {
-  height: 95vh;
-}
-
-.relative {
-  position: relative;
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0;
-}
-
-.right {
-  position: absolute;
-  right: 0;
+  height: 82.5vh;
 }
 
 .z-100 {
@@ -171,4 +162,39 @@ header {
 
 #about-description {
   line-height: 150%;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-gradient) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showcase-card-content {
+  margin: 0.1rem !important;
+}
+
+.showcase-card-content p {
+  margin-top: 0.7rem !important;
+  line-height: 130%;
+}
+
+.showcase-card-image {
+  height: 16rem;
+}
+
+.bg-cloud-top {
+  top: 22rem;
+  width: 14rem;
+}
+
+.bg-cloud-bottom {
+  bottom: 28rem;
+  width: 24rem;
+  opacity: 0.75;
 }
