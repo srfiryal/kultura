@@ -119,6 +119,10 @@ ul li a {
   color: var(--text-subtitle) !important;
 }
 
+.text-smaller {
+  font-size: 0.9rem !important;
+}
+
 #navbar-logo img {
   height: 2rem;
 }
@@ -206,4 +210,14 @@ header {
   bottom: 28rem;
   width: 24rem;
   opacity: 0.75;
+}
+
+#organizer-img {
+  width: 11rem;
+  height: 11rem;
+  border: 5px solid white;
+}
+
+.footer-shadow {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
 }
