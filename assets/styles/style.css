@@ -7,7 +7,7 @@
   --accent-gradient: #e28821;
   --text-body: #2d0008;
   --text-subtitle: #6d4a50;
-  --grey: #e4e4e4;
+  --grey: #d3d3d3;
 }
 
 * {
@@ -84,6 +84,11 @@ a {
 
 a:hover {
   text-decoration: underline !important;
+  text-decoration-color: var(--text-body) !important;
+}
+
+.soft-shadow {
+  box-shadow: 0px 4px 25px -3px rgba(0, 0, 0, 0.15) !important;
 }
 
 .default-padding {
@@ -148,6 +153,10 @@ a:hover {
 
 .z--10 {
   z-index: -10;
+}
+
+hr {
+  border-top: 2px var(--grey) solid !important;
 }
 
 #nav-logo-img {
