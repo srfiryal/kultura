@@ -164,7 +164,8 @@ hr {
 }
 
 #hero-content {
-  padding: 7.5rem 8rem;
+  padding-top: 7.5rem !important;
+  padding-bottom: 7.5rem !important;
 }
 
 #hero-img-1 {
@@ -177,7 +178,7 @@ hr {
   padding: 0;
 }
 
-#hero-background-img {
+#event-location-img {
   height: 24rem;
 }
 
@@ -250,4 +251,32 @@ hr {
 
 .footer-shadow {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 768px) {
+  .default-padding {
+    padding: 0 4rem !important;
+  }
+
+  #hero-content {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+  }
+
+  #hero-img-1 {
+    left: -9rem;
+    bottom: -4rem !important;
+    overflow: hidden;
+  }
+
+  #hero-img-2 {
+    width: 27rem;
+    right: -6rem !important;
+    bottom: -3.5rem !important;
+  }
+
+  #hero-background-img {
+    object-fit: cover;
+    height: 55rem !important;
+  }
 }
