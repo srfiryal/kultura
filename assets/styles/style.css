@@ -163,6 +163,10 @@ hr {
   height: 2rem;
 }
 
+#hero {
+  height: 82.5vh;
+}
+
 #hero-content {
   padding-top: 7.5rem !important;
   padding-bottom: 7.5rem !important;
@@ -258,25 +262,48 @@ hr {
     padding: 0 4rem !important;
   }
 
+  #hero {
+    height: 80vh;
+  }
+
   #hero-content {
     padding-top: 8rem !important;
     padding-bottom: 8rem !important;
   }
 
   #hero-img-1 {
+    width: 30rem;
     left: -9rem;
     bottom: -4rem !important;
     overflow: hidden;
   }
 
   #hero-img-2 {
-    width: 27rem;
-    right: -6rem !important;
-    bottom: -3.5rem !important;
+    width: 28rem;
+    right: -6.5rem !important;
+    bottom: -4.5rem !important;
   }
 
   #hero-background-img {
     object-fit: cover;
     height: 55rem !important;
+  }
+
+  .showcase-card-image {
+    height: 14rem;
+  }
+
+  .showcase-card-content {
+    margin: 0.5rem !important;
+  }
+
+  .bg-batik-top {
+    top: 16rem;
+    width: 12rem;
+  }
+
+  .bg-batik-bottom {
+    bottom: 22.5rem;
+    width: 18rem;
   }
 }
