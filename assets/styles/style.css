@@ -163,6 +163,10 @@ hr {
   height: 2rem;
 }
 
+.nav-item {
+  margin: 0rem 0.8rem !important;
+}
+
 #hero {
   height: 82.5vh;
 }
@@ -253,6 +257,10 @@ hr {
   width: 40%;
 }
 
+#footer-logo img {
+  width: 3rem;
+}
+
 .footer-shadow {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
@@ -260,6 +268,14 @@ hr {
 @media only screen and (max-width: 768px) {
   .default-padding {
     padding: 0 4rem !important;
+  }
+
+  .nav-item {
+    margin: 0.4rem 0rem !important;
+  }
+
+  .nav-item a p {
+    font-size: 1.1rem !important;
   }
 
   #hero {
@@ -313,5 +329,17 @@ hr {
 
   #event-background-img {
     height: 41%;
+  }
+
+  .organizer-background-img {
+    width: 46%;
+  }
+
+  #footer-logo img {
+    width: 2.25rem;
+  }
+
+  #footer-logo h3 {
+    font-size: 1.4rem !important;
   }
 }
