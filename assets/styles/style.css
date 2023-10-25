@@ -189,6 +189,20 @@ hr {
   border-left: 2px var(--grey) solid !important;
 }
 
+.reveal {
+  position: relative;
+  transform: translateX(-25px);
+  opacity: 0;
+  filter: blur(3px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0px);
+}
+
 /* Navbar Desktop */
 
 #nav-logo-img {
@@ -233,6 +247,15 @@ header {
 }
 
 /* Showcase Desktop */
+
+.showcase-col:nth-child(2) div,
+.showcase-col:nth-child(5) div {
+  transition-delay: 200ms;
+}
+
+.showcase-col:nth-child(3) div {
+  transition-delay: 400ms;
+}
 
 .showcase-card-content {
   margin: 0.1rem !important;
