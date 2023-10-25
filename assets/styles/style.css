@@ -298,12 +298,20 @@ hr {
   }
 
   .bg-batik-top {
-    top: 16rem;
+    top: 17rem;
     width: 12rem;
   }
 
   .bg-batik-bottom {
     bottom: 22.5rem;
     width: 18rem;
+  }
+
+  #event-location-img {
+    height: 19rem;
+  }
+
+  #event-background-img {
+    height: 41%;
   }
 }
