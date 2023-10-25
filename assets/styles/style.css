@@ -97,9 +97,8 @@ a {
   text-decoration: none !important;
 }
 
-a:hover {
+.nav-link:hover {
   text-decoration: underline !important;
-  text-decoration-color: var(--text-body) !important;
 }
 
 .soft-shadow {
@@ -114,6 +113,30 @@ a:hover {
 .btn-filled-primary {
   background-color: var(--primary) !important;
   color: white !important;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+}
+
+.btn-filled-primary:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease-out;
+  animation-name: btn-hover;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes btn-hover {
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 .btn-outline-primary {
@@ -266,8 +289,18 @@ header {
   line-height: 130%;
 }
 
-.showcase-card-image {
-  height: 16rem;
+.showcase-col:hover div {
+  cursor: pointer;
+}
+
+.showcase-col div div img {
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.showcase-col:hover div div img {
+  transform: scale(1.1) rotate(-3deg);
+  transition: 0.3s ease-in-out;
 }
 
 .bg-batik-top {

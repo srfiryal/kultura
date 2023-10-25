@@ -27,7 +27,7 @@
     >
       <div class="container-fluid p-0">
         <!-- Navbar Logo -->
-        <a class="navbar-brand m-0 p-0" href="#">
+        <a class="navbar-brand m-0 p-0" onclick="navigateTo('hero')">
           <div class="d-flex align-items-center">
             <img
               id="nav-logo-img"
@@ -57,27 +57,27 @@
             class="navbar-nav me-auto me-lg-3 my-2 my-lg-0 my-md-4 w-100 justify-content-center"
           >
             <li class="nav-item">
-              <a onclick="navigateTo('hero')"
+              <a class="nav-link" onclick="navigateTo('hero')"
                 ><p class="text-small">Beranda</p></a
               >
             </li>
             <li class="nav-item">
-              <a onclick="navigateTo('about')"
+              <a class="nav-link" onclick="navigateTo('about')"
                 ><p class="text-small">Tentang</p></a
               >
             </li>
             <li class="nav-item">
-              <a onclick="navigateTo('showcase')"
+              <a class="nav-link" onclick="navigateTo('showcase')"
                 ><p class="text-small">Pameran</p></a
               >
             </li>
             <li class="nav-item">
-              <a onclick="navigateTo('event')"
+              <a class="nav-link" onclick="navigateTo('event')"
                 ><p class="text-small">Acara</p></a
               >
             </li>
             <li class="nav-item">
-              <a onclick="navigateTo('organizer')"
+              <a class="nav-link" onclick="navigateTo('organizer')"
                 ><p class="text-small">Penyelenggara</p></a
               >
             </li>
@@ -235,10 +235,12 @@
                   id="showcase-dance"
                   class="reveal bg-white rounded-md soft-shadow overflow-hidden p-0"
                 >
-                  <img
-                    class="showcase-card-image w-100 object-fit-cover"
-                    src="./assets/images/img-tari.svg"
-                  />
+                  <div class="overflow-hidden">
+                    <img
+                      class="showcase-card-image w-100 object-fit-cover"
+                      src="./assets/images/img-tari.svg"
+                    />
+                  </div>
                   <div class="p-lg-4 p-md-3 showcase-card-content">
                     <h4>Tarian Anggun</h4>
                     <p>
@@ -265,10 +267,12 @@
                   id="showcase-gamelan"
                   class="reveal bg-white rounded-md soft-shadow overflow-hidden p-0"
                 >
-                  <img
-                    class="showcase-card-image w-100 object-fit-cover"
-                    src="./assets/images/img-gamelan.svg"
-                  />
+                  <div class="overflow-hidden">
+                    <img
+                      class="showcase-card-image w-100 object-fit-cover"
+                      src="./assets/images/img-gamelan.svg"
+                    />
+                  </div>
                   <div class="p-lg-4 p-md-3 showcase-card-content">
                     <h4>Harmoni Gamelan</h4>
                     <p>
@@ -294,10 +298,12 @@
                   id="showcase-wayang"
                   class="reveal bg-white rounded-md soft-shadow overflow-hidden p-0"
                 >
-                  <img
-                    class="showcase-card-image w-100 object-fit-cover"
-                    src="./assets/images/img-wayang.svg"
-                  />
+                  <div class="overflow-hidden">
+                    <img
+                      class="showcase-card-image w-100 object-fit-cover"
+                      src="./assets/images/img-wayang.svg"
+                    />
+                  </div>
                   <div class="p-lg-4 p-md-3 showcase-card-content">
                     <h4>Keajaiban Wayang</h4>
                     <p>
@@ -323,10 +329,12 @@
                   id="showcase-culinary"
                   class="reveal bg-white rounded-md soft-shadow overflow-hidden p-0"
                 >
-                  <img
-                    class="showcase-card-image w-100 object-fit-cover"
-                    src="./assets/images/img-kuliner.svg"
-                  />
+                  <div class="overflow-hidden">
+                    <img
+                      class="showcase-card-image w-100 object-fit-cover"
+                      src="./assets/images/img-kuliner.svg"
+                    />
+                  </div>
                   <div class="p-lg-4 p-md-3 showcase-card-content">
                     <h4>Kuliner Lezat</h4>
                     <p>
@@ -353,10 +361,12 @@
                   id="showcase-batik"
                   class="reveal bg-white rounded-md soft-shadow overflow-hidden p-0"
                 >
-                  <img
-                    class="showcase-card-image w-100 object-fit-cover"
-                    src="./assets/images/img-batik.svg"
-                  />
+                  <div class="overflow-hidden">
+                    <img
+                      class="showcase-card-image w-100 object-fit-cover"
+                      src="./assets/images/img-batik.svg"
+                    />
+                  </div>
                   <div class="p-lg-4 p-md-3 showcase-card-content">
                     <h4>Kreasi Batik</h4>
                     <p>Kembangkan kreativitasmu dalam sesi pembuatan batik.</p>
@@ -622,7 +632,9 @@
             <div class="col-lg-4 col-md-3 mb-3 mb-lg-0 mb-md-0">
               <div class="d-flex align-items-center" id="footer-logo">
                 <img src="./assets/images/icon-kultura.svg" />
-                <h3 class="text-logo ps-3 mt-1">Kultura</h3>
+                <h3 class="text-logo ps-3 mt-1" style="cursor: default">
+                  Kultura
+                </h3>
               </div>
             </div>
 
@@ -631,17 +643,23 @@
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Tautan</p>
               <ul class="m-0 p-0">
                 <li class="my-2">
-                  <a onclick="navigateTo('hero')">Beranda</a>
+                  <a class="nav-link" onclick="navigateTo('hero')">Beranda</a>
                 </li>
                 <li class="my-2">
-                  <a onclick="navigateTo('about')">Tentang</a>
+                  <a class="nav-link" onclick="navigateTo('about')">Tentang</a>
                 </li>
                 <li class="my-2">
-                  <a onclick="navigateTo('showcase')">Pameran</a>
+                  <a class="nav-link" onclick="navigateTo('showcase')"
+                    >Pameran</a
+                  >
                 </li>
-                <li class="my-2"><a onclick="navigateTo('event')">Acara</a></li>
                 <li class="my-2">
-                  <a onclick="navigateTo('organizer')">Penyelenggara</a>
+                  <a class="nav-link" onclick="navigateTo('event')">Acara</a>
+                </li>
+                <li class="my-2">
+                  <a class="nav-link" onclick="navigateTo('organizer')"
+                    >Penyelenggara</a
+                  >
                 </li>
               </ul>
             </div>
@@ -651,23 +669,29 @@
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Pameran</p>
               <ul class="m-0 p-0">
                 <li class="my-2">
-                  <a onclick="navigateTo('showcase-dance')">Tarian Anggun</a>
+                  <a class="nav-link" onclick="navigateTo('showcase-dance')"
+                    >Tarian Anggun</a
+                  >
                 </li>
                 <li class="my-2">
-                  <a onclick="navigateTo('showcase-gamelan')"
+                  <a class="nav-link" onclick="navigateTo('showcase-gamelan')"
                     >Harmoni Gamelan</a
                   >
                 </li>
                 <li class="my-2">
-                  <a onclick="navigateTo('showcase-wayang')"
+                  <a class="nav-link" onclick="navigateTo('showcase-wayang')"
                     >Keajaiban Wayang</a
                   >
                 </li>
                 <li class="my-2">
-                  <a onclick="navigateTo('showcase-culinary')">Kuliner Lezat</a>
+                  <a class="nav-link" onclick="navigateTo('showcase-culinary')"
+                    >Kuliner Lezat</a
+                  >
                 </li>
                 <li data-link="my-2">
-                  <a onclick="navigateTo('showcase-batik')">Kreasi Batik</a>
+                  <a class="nav-link" onclick="navigateTo('showcase-batik')"
+                    >Kreasi Batik</a
+                  >
                 </li>
               </ul>
             </div>
@@ -676,8 +700,10 @@
             <div class="my-3 my-md-0 my-lg-0 col-lg-2 col-md-3">
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Kontak</p>
               <ul class="m-0 p-0">
-                <li class="my-2"><a>(0293) 1234567</a></li>
-                <li class="my-2"><a>bantuan@kultura.com</a></li>
+                <li class="my-2"><a class="nav-link">(0293) 1234567</a></li>
+                <li class="my-2">
+                  <a class="nav-link">bantuan@kultura.com</a>
+                </li>
               </ul>
             </div>
           </div>
