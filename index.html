@@ -57,19 +57,29 @@
             class="navbar-nav me-auto me-lg-3 my-2 my-lg-0 my-md-4 w-100 justify-content-center"
           >
             <li class="nav-item">
-              <a href="#"><p class="text-small">Beranda</p></a>
+              <a onclick="navigateTo('hero')"
+                ><p class="text-small">Beranda</p></a
+              >
             </li>
             <li class="nav-item">
-              <a href="#about"><p class="text-small">Tentang</p></a>
+              <a onclick="navigateTo('about')"
+                ><p class="text-small">Tentang</p></a
+              >
             </li>
             <li class="nav-item">
-              <a href="#showcase"><p class="text-small">Pameran</p></a>
+              <a onclick="navigateTo('showcase')"
+                ><p class="text-small">Pameran</p></a
+              >
             </li>
             <li class="nav-item">
-              <a href="#event"><p class="text-small">Acara</p></a>
+              <a onclick="navigateTo('event')"
+                ><p class="text-small">Acara</p></a
+              >
             </li>
             <li class="nav-item">
-              <a href="#organizer"><p class="text-small">Penyelenggara</p></a>
+              <a onclick="navigateTo('organizer')"
+                ><p class="text-small">Penyelenggara</p></a
+              >
             </li>
           </ul>
           <button class="btn btn-outline-primary">Daftar</button>
@@ -143,7 +153,6 @@
 
           <!-- Section Divider -->
           <img
-            id="about"
             src="./assets/images/img-divider-1.svg"
             alt="Divider 1"
             class="w-100 position-absolute bottom-0"
@@ -152,7 +161,10 @@
       </header>
 
       <!-- About Section -->
-      <section class="bg-primary-gradient default-padding py-lg-5 py-md-4 py-3">
+      <section
+        id="about"
+        class="bg-primary-gradient default-padding py-lg-5 py-md-4 py-3"
+      >
         <div
           class="row text-white text-center my-lg-5 my-md-5 py-lg-1 py-md-1 py-5"
         >
@@ -477,7 +489,7 @@
           alt="Divider 2"
         />
 
-        <div class="default-padding py-5 mt-lg-1 mt-md-1 mt-2">
+        <div class="default-padding py-4 mt-lg-1 mt-md-1 mt-2">
           <!-- Organizer Title -->
           <div class="d-flex justify-content-center mb-lg-5 mb-md-5 mb-4">
             <img
@@ -493,7 +505,7 @@
             />
           </div>
 
-          <div class="w-100 p-0 mb-3">
+          <div class="w-100 p-0 mb-3 pb-lg-4">
             <div class="row p-0 g-0 justify-content-center">
               <!-- Organizer Decorative Image Left -->
               <div class="col position-relative d-none d-lg-block">
@@ -605,7 +617,7 @@
       <!-- Footer Section -->
       <footer class="w-100 footer-shadow">
         <div class="px-0 py-4 w-100">
-          <div class="w-100 row default-padding mt-lg-1 mt-md-2">
+          <div class="w-100 row default-padding mt-lg-2 mt-md-2">
             <!-- Footer Logo -->
             <div class="col-lg-4 col-md-3 mb-3 mb-lg-0 mb-md-0">
               <div class="d-flex align-items-center" id="footer-logo">
@@ -618,11 +630,19 @@
             <div class="my-3 my-md-0 my-lg-0 col-lg-3 col-md-3">
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Tautan</p>
               <ul class="m-0 p-0">
-                <li class="my-2"><a href="#">Beranda</a></li>
-                <li class="my-2"><a href="#about">Tentang</a></li>
-                <li class="my-2"><a href="#showcase">Pameran</a></li>
-                <li class="my-2"><a href="#event">Acara</a></li>
-                <li class="my-2"><a href="#organizer">Penyelenggara</a></li>
+                <li class="my-2">
+                  <a onclick="navigateTo('hero')">Beranda</a>
+                </li>
+                <li class="my-2">
+                  <a onclick="navigateTo('about')">Tentang</a>
+                </li>
+                <li class="my-2">
+                  <a onclick="navigateTo('showcase')">Pameran</a>
+                </li>
+                <li class="my-2"><a onclick="navigateTo('event')">Acara</a></li>
+                <li class="my-2">
+                  <a onclick="navigateTo('organizer')">Penyelenggara</a>
+                </li>
               </ul>
             </div>
 
@@ -631,18 +651,24 @@
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Pameran</p>
               <ul class="m-0 p-0">
                 <li class="my-2">
-                  <a href="#showcase-dance">Tarian Anggun</a>
+                  <a onclick="navigateTo('showcase-dance')">Tarian Anggun</a>
                 </li>
                 <li class="my-2">
-                  <a href="#showcase-gamelan">Harmoni Gamelan</a>
+                  <a onclick="navigateTo('showcase-gamelan')"
+                    >Harmoni Gamelan</a
+                  >
                 </li>
                 <li class="my-2">
-                  <a href="#showcase-wayang">Keajaiban Wayang</a>
+                  <a onclick="navigateTo('showcase-wayang')"
+                    >Keajaiban Wayang</a
+                  >
                 </li>
                 <li class="my-2">
-                  <a href="#showcase-culinary">Kuliner Lezat</a>
+                  <a onclick="navigateTo('showcase-culinary')">Kuliner Lezat</a>
                 </li>
-                <li class="my-2"><a href="#showcase-batik">Kreasi Batik</a></li>
+                <li data-link="my-2">
+                  <a onclick="navigateTo('showcase-batik')">Kreasi Batik</a>
+                </li>
               </ul>
             </div>
 

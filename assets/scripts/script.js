@@ -1,5 +1,12 @@
 const revealElements = document.querySelectorAll(".reveal");
 
+const navigateTo = (id) => {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth",
+    block: id == "showcase" ? "start" : "center",
+  });
+};
+
 const reveal = () => {
   for (let i = 0; i < revealElements.length; i++) {
     let windowheight = window.innerHeight;
@@ -7,10 +14,10 @@ const reveal = () => {
     let revealpoint = 0;
 
     if (revealtop < windowheight - revealpoint) {
-      revealElements[i].classList.add(`active`);
+      revealElements[i].classList.add("active");
     }
   }
 };
-window.addEventListener(`scroll`, reveal);
+window.addEventListener("scroll", reveal);
 
 reveal();
