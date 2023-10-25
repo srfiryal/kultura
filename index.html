@@ -19,7 +19,8 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg py-4 default-padding sticky-top bg-white z-100"
+      class="navbar navbar-expand-lg py-4 default-padding position-fixed w-100 bg-white"
+      style="z-index: 100"
     >
       <div class="container-fluid p-0">
         <a class="navbar-brand m-0 p-0" href="#">
@@ -79,7 +80,9 @@
             </div>
           </div>
           <div class="row mt-4 mb-5">
-            <div class="col-lg-4 col-sm-7 mx-auto d-flex bg-white rounded-sm">
+            <div
+              class="col-lg-4 col-md-7 col-12 mx-auto d-flex bg-white rounded-sm"
+            >
               <div class="flex-grow-1 d-flex py-3 px-2">
                 <img src="./assets/images/ic-date.svg" alt="Date" />
                 <div class="text-start ms-2">
@@ -104,13 +107,13 @@
         <div class="row">
           <img
             id="hero-img-1"
-            class="position-absolute bottom-0 me-auto z--10"
+            class="position-absolute d-none d-md-block bottom-0 me-auto z--10"
             src="./assets/images/img-hero-1.svg"
             alt="Hero 1"
           />
           <img
             id="hero-img-2"
-            class="position-absolute bottom-0 end-0 z--10"
+            class="position-absolute d-none d-md-block bottom-0 end-0 z--10"
             src="./assets/images/img-hero-2.svg"
             alt="Hero 2"
           />
@@ -133,17 +136,17 @@
       id="about"
       class="bg-primary-gradient default-padding py-lg-5 py-md-4"
     >
-      <div class="row w-100 text-white text-center my-5 py-1">
+      <div class="row text-white text-center my-lg-5 my-md-5 py-1">
         <div class="col-lg-10 col-md-12 mx-auto">
           <div class="d-flex justify-content-center mb-4">
             <img
-              class="section-title-img"
+              class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-white-start.svg"
               alt="Title 1"
             />
-            <h2 class="mx-4 text-white">Rayakan Keanekaragaman</h2>
+            <h2 class="mx-4 text-white text-center">Rayakan Keanekaragaman</h2>
             <img
-              class="section-title-img"
+              class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-white-end.svg"
               alt="Title 2"
             />
@@ -167,15 +170,17 @@
       />
 
       <div class="default-padding py-5 mt-4 mt-md-5 mb-lg-5 mb-md-1">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-lg-5 mb-md-5">
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-accent-start.svg"
             alt="Title 1"
           />
-          <h2 class="mx-4 text-accent-gradient">Pameran Budaya</h2>
+          <h2 id="showcase-title" class="mx-4 text-accent-gradient text-center">
+            Pameran Budaya
+          </h2>
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-accent-end.svg"
             alt="Title 2"
           />
@@ -320,7 +325,7 @@
           alt="Background "
         />
         <img
-          class="bg-batik-top position-absolute end-0 mt-5"
+          class="bg-batik-top position-absolute end-0 mt-5 d-none d-md-block d-lg-block"
           src="./assets/images/bg-batik-top-2.svg"
           alt="Background"
         />
@@ -328,7 +333,7 @@
 
       <div class="w-100 z--10 position-absolute bottom-0">
         <img
-          class="bg-batik-bottom position-absolute start-0 mt-5"
+          class="bg-batik-bottom position-absolute start-0 mt-5 d-none d-md-block d-lg-block"
           src="./assets/images/bg-batik-bottom-1.svg"
           alt="Background "
         />
@@ -349,16 +354,16 @@
     <section id="event" class="bg-primary-gradient default-padding pt-2 pb-5">
       <div class="w-100 my-5 py-lg-5 py-md-4">
         <div
-          class="d-flex justify-content-center mb-5 pb-1 text-white text-center"
+          class="d-flex justify-content-center mb-lg-5 mb-md-5 pb-1 text-white text-center"
         >
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-white-start.svg"
             alt="Title 1"
           />
-          <h2 class="mx-4 text-white">Acara</h2>
+          <h2 id="event-title" class="mx-4 text-white text-center">Acara</h2>
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-white-end.svg"
             alt="Title 2"
           />
@@ -373,7 +378,7 @@
                 alt="Borobudur"
               />
             </div>
-            <div class="col-lg col-md-12">
+            <div class="col-lg col-md-12 my-auto">
               <div class="p-4 ms-lg-3 m-md-2">
                 <div class="mb-4">
                   <p class="mb-1 color-subtitle">Catat tanggalnya ya!</p>
@@ -390,7 +395,7 @@
             </div>
             <img
               id="event-background-img"
-              class="position-absolute bottom-0 end-0"
+              class="position-absolute bottom-0 end-0 d-none d-lg-block d-md-block"
               src="./assets/images/bg-wayang.svg"
               alt="Background"
             />
@@ -407,15 +412,20 @@
       />
 
       <div class="default-padding py-5 mt-1">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-lg-5 mb-md-5">
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-accent-start.svg"
             alt="Title 1"
           />
-          <h2 class="mx-4 text-accent-gradient">Penyelenggara</h2>
+          <h2
+            id="organizer-title"
+            class="mx-4 text-accent-gradient text-center"
+          >
+            Penyelenggara
+          </h2>
           <img
-            class="section-title-img"
+            class="section-title-img d-none d-md-block"
             src="./assets/images/img-title-accent-end.svg"
             alt="Title 2"
           />
@@ -423,33 +433,32 @@
 
         <div class="w-100 p-0 mb-3">
           <div class="row p-0 g-0 justify-content-center">
-            <div class="col position-relative d-sm-none d-md-none d-lg-block">
+            <div class="col position-relative d-none d-lg-block">
               <img
                 class="organizer-wayang-img position-absolute end-0"
                 src="./assets/images/img-ondel-1.svg"
                 alt="Ondel-ondel"
               />
             </div>
-            <div class="col-lg-4 col-md-8 mb-md-1">
+            <div class="col-lg-4 col-md-8 col-sm-12 mb-md-1">
               <div
                 class="bg-white soft-shadow rounded-md overflow-hidden text-center mb-5"
               >
                 <div class="position-relative">
                   <div
+                    id="organizer-banner"
                     class="bg-primary-gradient w-100"
-                    style="height: 8rem"
                   ></div>
                   <img
                     id="organizer-img"
                     class="position-absolute top-50 start-50 translate-middle rounded-circle overflow-hidden object-fit-cover"
                     src="./assets/images/img-organizer.svg"
                     alt="Organizer"
-                    style="margin-top: 4rem"
                   />
                 </div>
-                <div style="margin-top: 7rem">
-                  <h4>Sarah Rizqi Firyal</h4>
-                  <div class="d-flex justify-content-center mt-4">
+                <div id="organizer-details">
+                  <h4 id="organizer-name">Sarah Rizqi Firyal</h4>
+                  <div class="d-flex justify-content-center mt-lg-4 mt-md-4">
                     <img src="./assets/images/ic-email.svg" alt="Email" />
                     <a href="mailto:srfiryal@gmail.com">
                       <p class="text-small color-subtitle ms-2">
@@ -467,7 +476,10 @@
                   </div>
                   <div class="d-flex justify-content-center mt-1 pt-1 pb-2">
                     <img src="./assets/images/ic-institute.svg" alt="Email" />
-                    <p class="text-small color-subtitle ms-2">
+                    <p
+                      id="organizer-institute"
+                      class="text-small color-subtitle ms-2"
+                    >
                       Politeknik Elektronika Negeri Surabaya
                     </p>
                   </div>
@@ -495,7 +507,7 @@
                 </div>
               </div>
             </div>
-            <div class="col position-relative d-sm-none d-md-none d-lg-block">
+            <div class="col position-relative d-none d-lg-block">
               <img
                 class="organizer-wayang-img position-absolute start-0"
                 src="./assets/images/img-ondel-2.svg"
@@ -525,13 +537,13 @@
     <footer class="w-100 footer-shadow">
       <div class="px-0 py-4 w-100">
         <div class="w-100 row default-padding mt-lg-1 mt-md-2">
-          <div class="col-lg-4 col-md-3">
+          <div class="col-lg-4 col-md-3 mb-3 mb-lg-0 mb-md-0">
             <div class="d-flex align-items-center" id="footer-logo">
               <img src="./assets/images/icon-kultura.svg" />
               <h3 class="text-logo ps-3 mt-1">Kultura</h3>
             </div>
           </div>
-          <div class="col-3">
+          <div class="footer-details col-lg-3 col-md-3">
             <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Tautan</p>
             <ul class="m-0 p-0">
               <li class="my-2"><a>Beranda</a></li>
@@ -541,7 +553,7 @@
               <li class="my-2"><a>Penyelenggara</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="footer-details col-lg-3 col-md-3">
             <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Pameran</p>
             <ul class="m-0 p-0">
               <li class="my-2"><a>Tarian Anggun</a></li>
@@ -551,7 +563,7 @@
               <li class="my-2"><a>Kreasi Batik</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-3">
+          <div class="footer-details col-lg-2 col-md-3">
             <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Kontak</p>
             <ul class="m-0 p-0">
               <li class="my-2"><a>(0293) 1234567</a></li>
@@ -560,7 +572,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-4 pb-3">
+      <div class="mt-lg-4 mt-md-4 pb-3">
         <p class="text-center color-subtitle pb-4 text-small">
           © 2020 Kultura. All rights reserved
         </p>

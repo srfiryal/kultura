@@ -10,6 +10,12 @@
   --grey: #d3d3d3;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -167,7 +173,12 @@ hr {
   margin: 0rem 0.8rem !important;
 }
 
+header {
+  overflow-x: clip;
+}
+
 #hero {
+  margin-top: 6rem;
   height: 82.5vh;
 }
 
@@ -235,13 +246,22 @@ hr {
 
 #event-background-img {
   width: fit-content;
-  height: 70%;
+  height: 16rem;
+}
+
+#organizer-banner {
+  height: 8rem;
 }
 
 #organizer-img {
   width: 11rem;
   height: 11rem;
+  margin-top: 4rem;
   border: 5px solid white;
+}
+
+#organizer-details {
+  margin-top: 7rem;
 }
 
 .organizer-wayang-img {
@@ -279,6 +299,7 @@ hr {
   }
 
   #hero {
+    margin-top: 8rem;
     height: 80vh;
   }
 
@@ -324,11 +345,11 @@ hr {
   }
 
   #event-location-img {
-    height: 19rem;
+    height: 20rem;
   }
 
   #event-background-img {
-    height: 41%;
+    height: 15.5rem;
   }
 
   .organizer-background-img {
@@ -341,5 +362,124 @@ hr {
 
   #footer-logo h3 {
     font-size: 1.4rem !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .default-padding {
+    padding: 0 2rem !important;
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+  }
+
+  h3 {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+  }
+
+  h4 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  #hero {
+    margin-top: 10rem;
+    height: 70vh;
+  }
+
+  #hero-background-img {
+    object-fit: cover;
+    height: 39rem !important;
+  }
+
+  #hero-content {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  #about {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #showcase-title {
+    padding-top: 0.3rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .showcase-card-image {
+    height: 12rem;
+  }
+
+  .showcase-card-content {
+    margin: 1.2rem !important;
+  }
+
+  .bg-batik-top {
+    top: 21rem;
+    width: 15rem;
+  }
+
+  .bg-batik-bottom {
+    bottom: 22rem;
+    width: 22rem;
+  }
+
+  #event-location-img {
+    height: 16rem;
+  }
+
+  #event-title {
+    padding-top: 1rem !important;
+    padding-bottom: 1.2rem !important;
+  }
+
+  #organizer-title {
+    margin-top: 0.8rem !important;
+    margin-bottom: 1.8rem !important;
+  }
+
+  #organizer-banner {
+    height: 6rem;
+  }
+
+  #organizer-img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 3rem;
+  }
+
+  #organizer-details {
+    margin-top: 5.3rem;
+  }
+
+  #organizer-name {
+    margin-bottom: 1.1rem !important;
+  }
+
+  #organizer-institute {
+    text-align: left;
+    width: 10.1rem;
+    margin-left: 0.8rem !important;
+  }
+
+  .organizer-social-icon {
+    width: 2.3rem;
+  }
+
+  .footer-details {
+    margin: 1rem 0 !important;
   }
 }
