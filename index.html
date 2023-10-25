@@ -17,12 +17,15 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
+    <!-- Navbar Section -->
     <nav
       class="navbar wrapper navbar-expand-lg py-4 default-padding position-fixed start-0 end-0 d-block w-100 bg-white"
       style="z-index: 100"
     >
       <div class="container-fluid p-0">
+        <!-- Navbar Logo -->
         <a class="navbar-brand m-0 p-0" href="#">
           <div class="d-flex align-items-center">
             <img
@@ -33,6 +36,8 @@
             <h4 class="text-logo mt-1">Kultura</h4>
           </div>
         </a>
+
+        <!-- Navbar Menu Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -44,6 +49,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navbar Links -->
         <div class="collapse navbar-collapse py-md-1" id="navbarScroll">
           <ul
             class="navbar-nav me-auto me-lg-3 my-2 my-lg-0 my-md-4 w-100 justify-content-center"
@@ -70,8 +77,10 @@
     </nav>
 
     <div class="wrapper">
+      <!-- Hero Section -->
       <header id="hero" class="flex-grow-1 position-relative">
         <div class="w-100">
+          <!-- Hero Content -->
           <div id="hero-content" class="default-padding text-center">
             <p>Pameran Budaya Nusantara</p>
             <div class="row mt-3 pb-2">
@@ -88,7 +97,7 @@
                 <div class="flex-grow-1 d-flex py-3 px-2">
                   <img src="./assets/images/ic-date.svg" alt="Date" />
                   <div class="text-start ms-2">
-                    <p class="mb-1 text-subtitle text-x-small">Waktu</p>
+                    <p class="mb-1 color-subtitle text-x-small">Waktu</p>
                     <h5 class="text-small fw-medium">1-3 Des 2023</h5>
                   </div>
                 </div>
@@ -96,7 +105,7 @@
                 <div class="flex-grow-1 d-flex p-3">
                   <img src="./assets/images/ic-location.svg" alt="Date" />
                   <div class="text-start ms-2">
-                    <p class="mb-1 text-subtitle text-x-small">Tempat</p>
+                    <p class="mb-1 color-subtitle text-x-small">Tempat</p>
                     <h5 class="text-small fw-medium">Borobudur</h5>
                   </div>
                 </div>
@@ -106,6 +115,8 @@
               Jelajahi Sekarang
             </button>
           </div>
+
+          <!-- Hero Decorative Images -->
           <div class="row">
             <img
               id="hero-img-1"
@@ -120,12 +131,16 @@
               alt="Hero 2"
             />
           </div>
+
+          <!-- Hero Background Images -->
           <img
             id="hero-background-img"
             class="position-absolute bottom-0 w-100 z--10"
             src="./assets/images/bg-hero.svg"
             alt="Hero Background"
           />
+
+          <!-- Section Divider -->
           <img
             src="./assets/images/img-divider-1.svg"
             alt="Divider 1"
@@ -134,12 +149,16 @@
         </div>
       </header>
 
+      <!-- About Section -->
       <section
         id="about"
-        class="bg-primary-gradient default-padding py-lg-5 py-md-4"
+        class="bg-primary-gradient default-padding py-lg-5 py-md-4 py-3"
       >
-        <div class="row text-white text-center my-lg-5 my-md-5 py-1">
+        <div
+          class="row text-white text-center my-lg-5 my-md-5 py-lg-1 py-md-1 py-5"
+        >
           <div class="col-lg-10 col-md-12 mx-auto">
+            <!-- About Title -->
             <div class="d-flex justify-content-center mb-4">
               <img
                 class="section-title-img d-none d-md-block"
@@ -155,6 +174,8 @@
                 alt="Title 2"
               />
             </div>
+
+            <!-- About Description -->
             <p id="about-description" class="text-white">
               Kultura memamerkan kekayaan budaya Nusantara dengan
               mempersembahkan pertunjukkan tarian tradisional, makanan daerah,
@@ -166,7 +187,9 @@
         </div>
       </section>
 
+      <!-- Showcase Section -->
       <section id="showcase" class="position-relative">
+        <!-- Section Divider -->
         <img
           class="w-100"
           src="./assets/images/img-divider-2.svg"
@@ -174,16 +197,16 @@
         />
 
         <div class="default-padding py-5 mt-4 mt-md-5 mb-lg-5 mb-md-1">
-          <div class="d-flex justify-content-center mb-lg-5 mb-md-5">
+          <!-- Showcase Title -->
+          <div
+            class="d-flex justify-content-center mb-lg-5 mb-md-5 mb-4 pb-1 pb-lg-0 pb-md-0"
+          >
             <img
               class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-accent-start.svg"
               alt="Title 1"
             />
-            <h2
-              id="showcase-title"
-              class="mx-4 text-accent-gradient text-center"
-            >
+            <h2 class="mx-4 text-accent-gradient text-center">
               Pameran Budaya
             </h2>
             <img
@@ -193,6 +216,7 @@
             />
           </div>
 
+          <!-- Showcase Grid -->
           <div class="w-100 p-0">
             <div class="row gy-5 justify-content-center">
               <div class="col-lg-4 col-md-6">
@@ -339,6 +363,7 @@
           </div>
         </div>
 
+        <!-- Showcase Background Images Top -->
         <div class="w-100 z--10 position-absolute top-0">
           <img
             class="bg-batik-top position-absolute start-0 mt-5"
@@ -352,6 +377,7 @@
           />
         </div>
 
+        <!-- Showcase Background Images Bottom -->
         <div class="w-100 z--10 position-absolute bottom-0">
           <img
             class="bg-batik-bottom position-absolute start-0 mt-5 d-none d-md-block d-lg-block"
@@ -365,6 +391,7 @@
           />
         </div>
 
+        <!-- Section Divider -->
         <img
           class="w-100 mt-3 pt-4"
           src="./assets/images/img-divider-monuments.svg"
@@ -372,27 +399,31 @@
         />
       </section>
 
+      <!-- Event Section -->
       <section id="event" class="bg-primary-gradient default-padding pt-2 pb-5">
         <div class="w-100 my-5 py-lg-5 py-md-4">
+          <!-- Event Title -->
           <div
-            class="d-flex justify-content-center mb-lg-5 mb-md-5 pb-1 text-white text-center"
+            class="d-flex justify-content-center mb-lg-5 mb-md-5 mb-4 pb-1 text-white text-center"
           >
             <img
               class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-white-start.svg"
               alt="Title 1"
             />
-            <h2 id="event-title" class="mx-4 text-white text-center">Acara</h2>
+            <h2 class="mx-4 text-white text-center">Acara</h2>
             <img
               class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-white-end.svg"
               alt="Title 2"
             />
           </div>
+
           <div
             class="rounded-md soft-shadow bg-white w-100 p-0 overflow-hidden"
           >
             <div class="row p-0 g-0 position-relative">
+              <!-- Event Location Image -->
               <div class="col-lg col-md-12">
                 <img
                   id="event-location-img"
@@ -401,6 +432,8 @@
                   alt="Borobudur"
                 />
               </div>
+
+              <!-- Event Details -->
               <div class="col-lg col-md-12 my-auto">
                 <div class="p-4 ms-lg-3 m-md-2">
                   <div class="mb-4">
@@ -418,6 +451,8 @@
                   </button>
                 </div>
               </div>
+
+              <!-- Event Decorative Image -->
               <img
                 id="event-background-img"
                 class="position-absolute bottom-0 end-0 d-none d-lg-block d-md-block"
@@ -429,26 +464,24 @@
         </div>
       </section>
 
+      <!-- Organizer Section -->
       <section id="organizer" class="position-relative">
+        <!-- Section Divider -->
         <img
           class="w-100"
           src="./assets/images/img-divider-2.svg"
           alt="Divider 2"
         />
 
-        <div class="default-padding py-5 mt-1">
-          <div class="d-flex justify-content-center mb-lg-5 mb-md-5">
+        <div class="default-padding py-5 mt-lg-1 mt-md-1 mt-2">
+          <!-- Organizer Title -->
+          <div class="d-flex justify-content-center mb-lg-5 mb-md-5 mb-4">
             <img
               class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-accent-start.svg"
               alt="Title 1"
             />
-            <h2
-              id="organizer-title"
-              class="mx-4 text-accent-gradient text-center"
-            >
-              Penyelenggara
-            </h2>
+            <h2 class="mx-4 text-accent-gradient text-center">Penyelenggara</h2>
             <img
               class="section-title-img d-none d-md-block"
               src="./assets/images/img-title-accent-end.svg"
@@ -458,6 +491,7 @@
 
           <div class="w-100 p-0 mb-3">
             <div class="row p-0 g-0 justify-content-center">
+              <!-- Organizer Decorative Image Left -->
               <div class="col position-relative d-none d-lg-block">
                 <img
                   class="organizer-wayang-img position-absolute end-0"
@@ -465,6 +499,8 @@
                   alt="Ondel-ondel"
                 />
               </div>
+
+              <!-- Organizer Details -->
               <div class="col-lg-4 col-md-8 col-sm-12 mb-md-1">
                 <div
                   class="bg-white soft-shadow rounded-md overflow-hidden text-center mb-5"
@@ -481,9 +517,9 @@
                       alt="Organizer"
                     />
                   </div>
-                  <div id="organizer-details">
-                    <h4 id="organizer-name">Sarah Rizqi Firyal</h4>
-                    <div class="d-flex justify-content-center mt-lg-4 mt-md-4">
+                  <div id="organizer-details" class="px-3">
+                    <h4>Sarah Rizqi Firyal</h4>
+                    <div class="d-flex justify-content-center mt-4">
                       <img src="./assets/images/ic-email.svg" alt="Email" />
                       <a href="mailto:srfiryal@gmail.com">
                         <p class="text-small color-subtitle ms-2">
@@ -532,6 +568,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Organizer Image Right -->
               <div class="col position-relative d-none d-lg-block">
                 <img
                   class="organizer-wayang-img position-absolute start-0"
@@ -543,6 +581,7 @@
           </div>
         </div>
 
+        <!-- Organizer Background Images -->
         <div
           class="w-100 d-flex justify-content-between position-absolute bottom-0 z--10"
         >
@@ -559,16 +598,20 @@
         </div>
       </section>
 
+      <!-- Footer Section -->
       <footer class="w-100 footer-shadow">
         <div class="px-0 py-4 w-100">
           <div class="w-100 row default-padding mt-lg-1 mt-md-2">
+            <!-- Footer Logo -->
             <div class="col-lg-4 col-md-3 mb-3 mb-lg-0 mb-md-0">
               <div class="d-flex align-items-center" id="footer-logo">
                 <img src="./assets/images/icon-kultura.svg" />
                 <h3 class="text-logo ps-3 mt-1">Kultura</h3>
               </div>
             </div>
-            <div class="footer-details col-lg-3 col-md-3">
+
+            <!-- Footer Links -->
+            <div class="my-3 my-md-0 my-lg-0 col-lg-3 col-md-3">
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Tautan</p>
               <ul class="m-0 p-0">
                 <li class="my-2"><a>Beranda</a></li>
@@ -578,7 +621,9 @@
                 <li class="my-2"><a>Penyelenggara</a></li>
               </ul>
             </div>
-            <div class="footer-details col-lg-3 col-md-3">
+
+            <!-- Footer Showcase -->
+            <div class="my-3 my-md-0 my-lg-0 col-lg-3 col-md-3">
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Pameran</p>
               <ul class="m-0 p-0">
                 <li class="my-2"><a>Tarian Anggun</a></li>
@@ -588,7 +633,9 @@
                 <li class="my-2"><a>Kreasi Batik</a></li>
               </ul>
             </div>
-            <div class="footer-details col-lg-2 col-md-3">
+
+            <!-- Footer Contacts -->
+            <div class="my-3 my-md-0 my-lg-0 col-lg-2 col-md-3">
               <p class="fw-bold ms-1 mt-lg-2 pt-1 mb-3">Kontak</p>
               <ul class="m-0 p-0">
                 <li class="my-2"><a>(0293) 1234567</a></li>
@@ -597,6 +644,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Footer Copyright -->
         <div class="mt-lg-4 mt-md-4 pb-3">
           <p class="text-center color-subtitle pb-4 text-small">
             © 2020 Kultura. All rights reserved

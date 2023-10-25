@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Common Desktop */
+
 :root {
   --primary: #b82a0b;
   --primary-gradient: #eb623e;
@@ -140,8 +142,8 @@ a:hover {
   border-radius: 24px;
 }
 
-.text-subtitle {
-  color: var(--text-subtitle) !important;
+.section-title-img {
+  width: 7.5rem !important;
 }
 
 .color-primary {
@@ -150,6 +152,17 @@ a:hover {
 
 .color-subtitle {
   color: var(--text-subtitle) !important;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-gradient) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-small {
@@ -172,6 +185,12 @@ hr {
   border-top: 2px var(--grey) solid !important;
 }
 
+.vr {
+  border-left: 2px var(--grey) solid !important;
+}
+
+/* Navbar Desktop */
+
 #nav-logo-img {
   height: 2rem;
 }
@@ -179,6 +198,8 @@ hr {
 .nav-item {
   margin: 0rem 0.8rem !important;
 }
+
+/* Hero Desktop */
 
 header {
   overflow-x: clip;
@@ -205,28 +226,13 @@ header {
   padding: 0;
 }
 
-#event-location-img {
-  height: 24rem;
-}
-
-.section-title-img {
-  width: 7.5rem !important;
-}
+/* About Desktop */
 
 #about-description {
   line-height: 150%;
 }
 
-.text-accent-gradient {
-  background: linear-gradient(
-    90deg,
-    var(--accent) 0%,
-    var(--accent-gradient) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* Showcase Desktop */
 
 .showcase-card-content {
   margin: 0.1rem !important;
@@ -252,10 +258,18 @@ header {
   opacity: 0.75;
 }
 
+/* Event Desktop */
+
+#event-location-img {
+  height: 24rem;
+}
+
 #event-background-img {
   width: fit-content;
   height: 16rem;
 }
+
+/* Organizer Desktop */
 
 #organizer-banner {
   height: 8rem;
@@ -285,6 +299,8 @@ header {
   width: 40%;
 }
 
+/* Footer Desktop */
+
 #footer-logo img {
   width: 3rem;
 }
@@ -293,10 +309,16 @@ header {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
+/* Tablet Responsive */
+
 @media only screen and (max-width: 768px) {
+  /* Common Tablet */
+
   .default-padding {
     padding: 0 4rem !important;
   }
+
+  /* Navbar Tablet */
 
   .nav-item {
     margin: 0.4rem 0rem !important;
@@ -305,6 +327,8 @@ header {
   .nav-item a p {
     font-size: 1.1rem !important;
   }
+
+  /* Hero Tablet */
 
   #hero {
     margin-top: 8rem;
@@ -334,6 +358,8 @@ header {
     height: 55rem !important;
   }
 
+  /* Showcase Tablet */
+
   .showcase-card-image {
     height: 14rem;
   }
@@ -352,6 +378,8 @@ header {
     width: 18rem;
   }
 
+  /* Event Tablet */
+
   #event-location-img {
     height: 20rem;
   }
@@ -360,9 +388,13 @@ header {
     height: 15.5rem;
   }
 
+  /* Organizer Tablet */
+
   .organizer-background-img {
     width: 46%;
   }
+
+  /* Footer Tablet */
 
   #footer-logo img {
     width: 2.25rem;
@@ -373,7 +405,11 @@ header {
   }
 }
 
+/* Mobile Responsive */
+
 @media only screen and (max-width: 576px) {
+  /* Common Mobile */
+
   .default-padding {
     padding: 0 2rem !important;
   }
@@ -402,6 +438,8 @@ header {
     font-size: 0.9rem !important;
   }
 
+  /* Hero Mobile */
+
   #hero {
     margin-top: 10rem;
     height: 70vh;
@@ -417,15 +455,7 @@ header {
     padding-bottom: 6rem !important;
   }
 
-  #about {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-
-  #showcase-title {
-    padding-top: 0.3rem !important;
-    padding-bottom: 2rem !important;
-  }
+  /* Showcase Mobile */
 
   .showcase-card-image {
     height: 12rem;
@@ -445,19 +475,13 @@ header {
     width: 22rem;
   }
 
+  /* Event Mobile */
+
   #event-location-img {
     height: 16rem;
   }
 
-  #event-title {
-    padding-top: 1rem !important;
-    padding-bottom: 1.2rem !important;
-  }
-
-  #organizer-title {
-    margin-top: 0.8rem !important;
-    margin-bottom: 1.8rem !important;
-  }
+  /* Organizer Mobile */
 
   #organizer-banner {
     height: 6rem;
@@ -473,10 +497,6 @@ header {
     margin-top: 5.3rem;
   }
 
-  #organizer-name {
-    margin-bottom: 1.1rem !important;
-  }
-
   #organizer-institute {
     text-align: left;
     width: 10.1rem;
@@ -486,8 +506,6 @@ header {
   .organizer-social-icon {
     width: 2.3rem;
   }
-
-  .footer-details {
-    margin: 1rem 0 !important;
-  }
 }
+
+/* Mobile Responsive Ends */
