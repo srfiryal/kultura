@@ -28,6 +28,13 @@ body {
   padding: 0;
 }
 
+.wrapper {
+  position: relative !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  max-width: 1920px !important;
+}
+
 h1,
 h2,
 h3,
@@ -180,6 +187,7 @@ header {
 #hero {
   margin-top: 6rem;
   height: 82.5vh;
+  max-height: 720px;
 }
 
 #hero-content {
